@@ -11,7 +11,7 @@ namespace Mobile
             InitializeComponent();
 
             DependencyService.Register<MockDataStore>();
-            DependencyService.Register<IWeatherService, WeatherForecastService>();
+            DependencyService.Register<IApiService, RealApiService>();
 
             MainPage = new AppShell();
         }
