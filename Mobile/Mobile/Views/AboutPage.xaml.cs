@@ -1,7 +1,5 @@
-﻿using System;
-using System.ComponentModel;
+﻿using Mobile.ViewModels;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace Mobile.Views
 {
@@ -10,6 +8,7 @@ namespace Mobile.Views
         public AboutPage()
         {
             InitializeComponent();
+            BindingContext = new AboutViewModel();
         }
     }
 }

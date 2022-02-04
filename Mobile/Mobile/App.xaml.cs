@@ -1,8 +1,5 @@
 ﻿using Mobile.Services;
-using Mobile.Views;
-using System;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace Mobile
 {
@@ -14,6 +11,8 @@ namespace Mobile
             InitializeComponent();
 
             DependencyService.Register<MockDataStore>();
+            DependencyService.Register<IWeatherService, WeatherForecastService>();
+
             MainPage = new AppShell();
         }
 
