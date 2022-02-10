@@ -7,7 +7,7 @@ namespace API.Controllers
     public class WhoAmIController : ControllerBase
     {
 
-        [HttpGet(Name = "JoinGame")]
+        [HttpGet(Name = "WhoAmI")]
         public async Task<string> Get()
         {
             return Environment.MachineName;
