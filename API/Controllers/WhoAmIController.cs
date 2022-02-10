@@ -10,7 +10,7 @@ namespace API.Controllers
         [HttpGet(Name = "WhoAmI")]
         public async Task<string> Get()
         {
-            return Environment.MachineName;
+            return $"It is {DateTime.Now} and I'm running on {Environment.MachineName}.";
         }
     }
 }
