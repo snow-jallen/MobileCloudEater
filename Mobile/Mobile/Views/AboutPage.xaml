@@ -43,6 +43,14 @@
                         BackgroundColor="{StaticResource Primary}"
                         TextColor="White" />
                 <Label Text="{Binding Result}" />
+                <Button Text="Move Left"
+                        Command="{Binding MoveLeftCommand}" />
+                <Button Text="Move Right"
+                        Command="{Binding MoveRightCommand}" />
+                <Button Text="Move Up"
+                        Command="{Binding MoveUpCommand}" />
+                <Button Text="Move Down"
+                        Command="{Binding MoveDownCommand}" />
             </StackLayout>
         </ScrollView>
     </Grid>

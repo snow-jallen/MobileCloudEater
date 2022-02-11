@@ -28,4 +28,31 @@ public partial class AboutViewModel : ObservableObject
         Result = await apiService.JoinGameAsync(DesiredPlayerName);
     }
 
+
+    [ICommand]
+    public async Task MoveLeft()
+    {
+        Result = await apiService.MoveLeftAsync();
+
+    }
+    [ICommand]
+    public async Task MoveRight()
+    {
+        Result = await apiService.MoveRightAsync();
+
+    }
+    [ICommand]
+    public async Task MoveUp()
+    {
+        Result = await apiService.MoveUpAsync();
+
+    }
+    [ICommand]
+    public async Task MoveDown()
+    {
+        Result = await apiService.MoveDownAsync();
+
+    }
+
+
 }
